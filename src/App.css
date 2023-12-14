@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: 3s ease;
+}
+
+/* Colors */
+
+  :root {
+    --red: hsl(0, 46%, 43%);
+    --green: hsl(120, 100%, 50%);
+    --blue: hsl(240, 100%, 50%);
+    --yellow: hsl(60, 100%, 50%);
+    --purple: hsl(270, 100%, 50%);
+    --cyan: hsl(180, 100%, 50%);
+    
+    --light-blue: hsl(200, 80%, 70%);
+    --hover-color: hsl(30, 95%, 32%);
+    --pink: hsl(330, 80%, 70%);
+    --teal: hsl(160, 80%, 50%);
+    --lime: hsl(90, 80%, 50%);
+    --indigo: hsl(240, 80%, 60%);
+    
+    --dark-red: hsl(0, 80%, 30%);
+    --dark-green: hsl(120, 80%, 30%);
+    --dark-blue: hsl(240, 80%, 30%);
+    --dark-yellow: hsl(60, 80%, 30%);
+    --dark-purple: hsl(270, 80%, 30%);
+    --dark-cyan: hsl(180, 80%, 30%);
+    --gris: hsl(0, 0%, 50%); /* Gris neutre à 50% de luminosité */
+    --gris-fonce: hsl(0, 0%, 30%); /* Gris foncé à 30% de luminosité */
+    --text-color: hsl(0, 0%, 70%);
+  }
+  
+/* Default Styling  */
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 5rem 0 2rem ;
+}
+
+.container{
+  padding-left:1.5rem ;
+  padding-right:1.5rem ;
+}
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+}
+.btn{
+  padding: .4rem 1.5rem;
+  background:var(--blue) ;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.btn a {
+  color: white;
+  font-weight: 500;
+}
+
+.btn:hover{
+  background: var(--blue);
+}
+
+.btn:hover a{
+  color: white;
+}
+
+.secIntro{
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+
+.secIntro .secTitle{
+  color: var(black);
+  line-height: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.secIntro p{
+  font-size: 13px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+}
+
+/* all*/
+
+
+@media screen and (min-width:570px) {
+  .mainContent , .singlePost{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+
+
+@media screen and (min-width:884px) {
+  .mainContent{
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+}
+
+@media screen and (min-width:1240px) {
+  .container{
+    width: 75% !important;
+    margin: auto !important;
+
+  }
+  
+}
+
+::selection{
+  background: var(--hover-color);
+  color: white;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: var(--gris);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--hover-color);
+  border-radius: 10px;
+  cursor: pointer;
+}

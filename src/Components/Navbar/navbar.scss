@@ -1,0 +1,250 @@
+/* Colors */
+
+:root {
+    --red: hsl(0, 46%, 43%);
+    --green: hsl(120, 100%, 50%);
+    --blue: hsl(240, 100%, 50%);
+    --yellow: hsl(60, 100%, 50%);
+    --purple: hsl(270, 100%, 50%);
+    --cyan: hsl(180, 100%, 50%);
+    
+    --light-blue: hsl(200, 80%, 70%);
+    --hover-color: hsl(30, 95%, 32%);
+    --pink: hsl(330, 80%, 70%);
+    --teal: hsl(160, 80%, 50%);
+    --lime: hsl(90, 80%, 50%);
+    --indigo: hsl(240, 80%, 60%);
+    
+    --dark-red: hsl(0, 80%, 30%);
+    --dark-green: hsl(120, 80%, 30%);
+    --dark-blue: hsl(240, 80%, 30%);
+    --input-color: hsl(32, 12%, 76%);
+    --dark-purple: hsl(270, 80%, 30%);
+    --dark-cyan: hsl(180, 80%, 30%);
+    --gris: hsl(0, 0%, 50%); /* Gris neutre à 50% de luminosité */
+    --gris-fonce: hsl(0, 0%, 30%); /* Gris foncé à 30% de luminosité */
+    --text-color: hsl(0, 0%, 70%);
+  }
+
+  .navBarSection{
+    .header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+
+        .logoDiv{
+            .logo{
+                color: var(--hover-color);
+                font-weight: 500;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+
+
+                .icon{
+                    color: var(--hover-color);
+                    font-size: 25px;
+                    margin-right: 10px;
+                }
+
+            }
+        }
+
+
+        @media screen and (max-width: 768px){
+            .navBar{
+                background: var(--text-color);
+                position: absolute;
+                height: max-content;
+                padding: 1rem;
+                width: 100%;
+                top: 0;
+                left: -500%;
+                box-shadow: 0 2px 4px rgba(209,209,209,0.904);
+                transition: .5s ease;
+                z-index: 1000;
+
+
+                .navLists{
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+
+
+                    .navItem{
+                        padding: 1rem 0;
+
+
+
+                        .navLink{
+                            color: var(--blue);
+                            font-size: .9rem;
+                            font-weight: 600;
+                            &:hover{
+                                color:var(--primary-color);
+                            }
+                        }
+                    }
+
+                    .headerBtns{
+                        flex-direction: column;
+                        .btn{
+                            background: var(--hover-color);
+                            color: white;
+                            margin-top: 1rem;
+                            &:hover{
+                                background: var(--blue);
+                            }
+
+                            a{
+                                font-weight: 600;
+                                
+                                &:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+                        .loginBtn{
+                            background: none;
+                            border: 1px solid var(--primary-color);
+
+                            a{
+                                color:var(--primary-color)
+                            }
+                            &:hover{
+                                background: var(--blue);
+                                a{
+                                    color:white;
+                                }
+                            
+                            }
+                        }
+                    }
+                }
+
+                .closeNavbar{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--primary-color);
+                    &:hover .icon{
+                        color: var(--hover-color);
+                    }
+
+                }
+            }
+
+
+            .activeNavbar{
+                left: 0;
+            }
+        }
+
+
+        .toggleNavbar{
+            .icon{
+                font-size: 25px;
+                color: white;
+                &:hover{
+                    color: var(--hover-color);
+                    
+                }
+            }
+        }
+    }
+
+    .activeHeader{
+        background: var(--gris);
+        box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45);
+    }
+  }
+
+
+  @media screen  and (min-width:769px) {
+    .navBarSection{
+        .toggleNavbar, .closeNavbar{
+            display: none;
+        }
+
+        .header{
+            padding: 1.5rem 2rem;
+            
+            .navBar{
+                .navLists{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+
+                    .navItem{
+                        .navLink{
+                            color: white;
+                            padding: 0 .45rem;
+                            font-size: .9rem;
+                            font-weight: 400;
+                            &:hover{
+                                color: var(--hover-color);
+
+                            }
+                        }
+                    }
+
+                    .btn{
+                        margin-left: 1rem;
+
+                        a{
+                            color: white;
+                            font-weight: 500;
+
+
+                        }
+                    }
+
+                    .loginBtn{
+                        background: none;
+                        border: 1px solid var(--hover-color);
+
+                        &:hover{
+                            background: var(--hover-color);
+
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+
+            };
+        }
+    }
+   
+  }
+
+
+  @media screen and (min-width:968px) {
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 .7rem;
+                }
+            }
+        }
+    }
+  }
+
+
+
+  @media screen and (min-width:1024px) {
+    .header{
+        padding: 1rem 0.5rem !important;
+
+    }
+  }

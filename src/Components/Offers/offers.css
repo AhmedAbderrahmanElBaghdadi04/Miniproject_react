@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* Colors */
+:root {
+  --red: hsl(0, 46%, 43%);
+  --green: hsl(120, 100%, 50%);
+  --blue: hsl(240, 100%, 50%);
+  --yellow: hsl(60, 100%, 50%);
+  --purple: hsl(270, 100%, 50%);
+  --cyan: hsl(180, 100%, 50%);
+  --light-blue: hsl(200, 80%, 70%);
+  --hover-color: hsl(30, 95%, 32%);
+  --pink: hsl(330, 80%, 70%);
+  --teal: hsl(160, 80%, 50%);
+  --lime: hsl(90, 80%, 50%);
+  --indigo: hsl(240, 80%, 60%);
+  --dark-red: hsl(0, 80%, 30%);
+  --dark-green: hsl(120, 80%, 30%);
+  --dark-blue: hsl(240, 80%, 30%);
+  --dark-yellow: hsl(60, 80%, 30%);
+  --dark-purple: hsl(270, 80%, 30%);
+  --dark-cyan: hsl(180, 80%, 30%);
+  --gris: hsl(0, 0%, 50%); /* Gris neutre à 50% de luminosité */
+  --gris-fonce: hsl(0, 0%, 30%); /* Gris foncé à 30% de luminosité */
+  --text-color: hsl(0, 0%, 70%);
+}
+
+.offer .secContainer .mainContent {
+  gap: 1rem;
+}
+.offer .secContainer .mainContent .singleOffer {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 5rem;
+  box-shadow: 0 2px 8px 2px rgbe(178, 178, 178, 0.189);
+}
+.offer .secContainer .mainContent .singleOffer .icon {
+  font-size: 20px;
+  color: var(--hover-color);
+}
+.offer .secContainer .mainContent .singleOffer small {
+  font-weight: 500;
+  color: black;
+}
+.offer .secContainer .mainContent .singleOffer .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.offer .secContainer .mainContent .singleOffer .destImage img {
+  height: 100%;
+}
+.offer .secContainer .mainContent .singleOffer .destImage .discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: var(--hover-color);
+  color: white;
+  border-radius: 3rem;
+  font-size: 10px;
+  font-weight: 500;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody {
+  padding: 1rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .price {
+  justify-content: space-between;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .price h4 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .price .status {
+  padding: 5px 10px;
+  color: var(--blue);
+  background: var(--gris);
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 3rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .amenities {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .amenities .singleAmenity {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--gris);
+  color: var(--hover-color);
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .amenities .location {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--gris);
+  color: var(--hover-color);
+  gap: 0.5rem;
+  color: black;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: white;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .btn .icon {
+  color: white;
+}
+.offer .secContainer .mainContent .singleOffer:hover {
+  transform: translateY(-7px);
+}/*# sourceMappingURL=offers.css.map */

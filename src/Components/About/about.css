@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* Colors */
+:root {
+  --red: hsl(0, 46%, 43%);
+  --green: hsl(120, 100%, 50%);
+  --blue: hsl(240, 100%, 50%);
+  --yellow: hsl(60, 100%, 50%);
+  --purple: hsl(270, 100%, 50%);
+  --cyan: hsl(180, 100%, 50%);
+  --light-blue: hsl(200, 80%, 70%);
+  --hover-color: hsl(30, 95%, 32%);
+  --pink: hsl(330, 80%, 70%);
+  --teal: hsl(160, 80%, 50%);
+  --lime: hsl(90, 80%, 50%);
+  --indigo: hsl(240, 80%, 60%);
+  --dark-red: hsl(0, 80%, 30%);
+  --dark-green: hsl(120, 80%, 30%);
+  --dark-blue: hsl(240, 80%, 30%);
+  --dark-yellow: hsl(60, 80%, 30%);
+  --dark-purple: hsl(270, 80%, 30%);
+  --dark-cyan: hsl(180, 80%, 30%);
+  --gris: hsl(0, 0%, 50%); /* Gris neutre à 50% de luminosité */
+  --gris-fonce: hsl(0, 0%, 30%); /* Gris foncé à 30% de luminosité */
+  --text-color: hsl(0, 0%, 70%);
+}
+
+.about_section .secContainer .title {
+  color: black;
+  line-height: 1.5rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about_section .secContainer .mainContent {
+  gap: 1rem;
+}
+.about_section .secContainer .mainContent .singleItem {
+  text-align: center;
+}
+.about_section .secContainer .mainContent .singleItem img {
+  background: rgba(247, 144, 54, 0.265);
+  width: 100px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.about_section .secContainer .mainContent .singleItem h3 {
+  font-weight: 700;
+  color: black;
+  padding: 0.5rem;
+}
+.about_section .secContainer .mainContent .singleItem p {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: black;
+}
+.about_section .secContainer .videoCard {
+  margin-top: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url(../../Assets/map.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about_section .secContainer .videoCard .cardContent {
+  gap: 0.2rem;
+  padding: 2rem 1rem;
+}
+.about_section .secContainer .videoCard .cardContent .cardText h2 {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.about_section .secContainer .videoCard .cardContent .cardText p {
+  color: white;
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.about_section .secContainer .videoCard .cardVideo {
+  border: 2px solid white;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about_section .secContainer .videoCard .cardVideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 720px) {
+  .about_section .videoCard .cardContent {
+    gap: 4rem;
+    padding: 4rem 3rem;
+  }
+  .about_section .videoCard .cardContent .cardText h2 {
+    font-size: 2rem;
+  }
+  .about_section .videoCard .cardContent .cardText p {
+    opacity: 0.7;
+    font-size: 15px;
+  }
+  .about_section .videoCard .cardContent {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 720px) {
+  .about_section .secContainer .mainContent {
+    padding: 2.5rem 0;
+  }
+}/*# sourceMappingURL=about.css.map */

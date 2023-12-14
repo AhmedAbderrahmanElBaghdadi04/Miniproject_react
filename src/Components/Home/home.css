@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* Colors */
+:root {
+  --red: hsl(0, 46%, 43%);
+  --green: hsl(120, 100%, 50%);
+  --blue: hsl(240, 100%, 50%);
+  --yellow: hsl(60, 100%, 50%);
+  --purple: hsl(270, 100%, 50%);
+  --cyan: hsl(180, 100%, 50%);
+  --light-blue: hsl(200, 80%, 70%);
+  --hover-color: hsl(30, 95%, 32%);
+  --pink: hsl(330, 80%, 70%);
+  --teal: hsl(160, 80%, 50%);
+  --lime: hsl(90, 80%, 50%);
+  --indigo: hsl(240, 80%, 60%);
+  --dark-red: hsl(0, 80%, 30%);
+  --dark-green: hsl(120, 80%, 30%);
+  --dark-blue: hsl(240, 80%, 30%);
+  --input-color: hsl(32, 12%, 76%);
+  --dark-purple: hsl(270, 80%, 30%);
+  --dark-cyan: hsl(180, 80%, 30%);
+  --gris: hsl(0, 0%, 50%); /* Gris neutre à 50% de luminosité */
+  --gris-fonce: hsl(0, 0%, 30%); /* Gris foncé à 30% de luminosité */
+  --text-color: hsl(0, 0%, 70%);
+}
+
+.home {
+  height: 80vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url(../../Assets/manny-moreno-YM9091WTGdU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.home .secContainer .homeText {
+  text-align: center;
+}
+.home .secContainer .homeText .title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.home .secContainer .homeText .subTitle {
+  color: white;
+  opacity: 0.9;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 1rem 0;
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.home .secContainer .homeText .btn {
+  padding: 0.6rem 1.5rem;
+  background: var(--hover-color);
+}
+.home .secContainer .homeText .btn:hover {
+  background: var(--blue);
+}
+.home .secContainer .homeCard {
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: white;
+  position: absolute;
+  gap: 1rem;
+  justify-content: center;
+  bottom: -35%;
+  transform: translate(-50%);
+  left: 50%;
+  box-shadow: o 2px 8px 4px rgba(178, 178, 178, 0.45);
+}
+.home .secContainer .homeCard .locationDiv, .home .secContainer .homeCard .distDiv, .home .secContainer .homeCard .priceDiv {
+  width: 100%;
+}
+.home .secContainer .homeCard .locationDiv label, .home .secContainer .homeCard .distDiv label, .home .secContainer .homeCard .priceDiv label {
+  display: block;
+  color: var(--text-color);
+  font-weight: 500;
+  font-style: 13px;
+  padding-bottom: 0.4rem;
+}
+.home .secContainer .homeCard .locationDiv input, .home .secContainer .homeCard .distDiv input, .home .secContainer .homeCard .priceDiv input {
+  width: 100%;
+  background: var(--input-color);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .secContainer .homeCard .locationDiv input::-moz-placeholder, .home .secContainer .homeCard .distDiv input::-moz-placeholder, .home .secContainer .homeCard .priceDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+  color: var(--gris-fonce);
+}
+.home .secContainer .homeCard .locationDiv input::placeholder, .home .secContainer .homeCard .distDiv input::placeholder, .home .secContainer .homeCard .priceDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+  color: var(--gris-fonce);
+}
+.home .secContainer .homeCard .locationDiv input:focus, .home .secContainer .homeCard .distDiv input:focus, .home .secContainer .homeCard .priceDiv input:focus {
+  outline: none;
+}
+.home .secContainer .homeCard .btn {
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  color: white;
+  font-weight: 600;
+  background: var(--hover-color);
+}
+.home .secContainer .homeCard .btn:hover {
+  background: blue;
+}
+
+@media screen and (min-width: 480px) {
+  .home .secContainer .homeCard {
+    bottom: -100px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .btn {
+    transform: translateY(15px);
+  }
+}
+@media screen and (min-width: 556px) {
+  .home .secContainer .homeText .title {
+    font-size: 2.5rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeCard {
+    bottom: -20%;
+    grid-template-columns: repeat(4, 1fr);
+    /* .btn{
+        transform: translateY(15px);
+    } */
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeText {
+    padding: 1rem 10rem;
+  }
+  .home .secContainer .homeText .title {
+    font-size: 3.5rem;
+    margin: auto;
+    line-height: 4rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .secContainer .homeText .subTitle {
+    font-size: 20px;
+  }
+  .home .secContainer ¨ .homeCard {
+    width: 70%;
+  }
+}/*# sourceMappingURL=home.css.map */
