@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Miniproject_react/static/css/main.2bf20618.css",
+    "main.js": "/Miniproject_react/static/js/main.8a88d9bd.js",
+    "static/js/787.0f45d4c2.chunk.js": "/Miniproject_react/static/js/787.0f45d4c2.chunk.js",
+    "static/media/video.mp4": "/Miniproject_react/static/media/video.1e6e88ef8c3260b1c0ea.mp4",
+    "static/media/EiffelTower.jpg": "/Miniproject_react/static/media/EiffelTower.8b828b3763a8325e2ffa.jpg",
+    "static/media/hamza-nouasria-DcBrhTFvyMo-unsplash.jpg": "/Miniproject_react/static/media/hamza-nouasria-DcBrhTFvyMo-unsplash.8ce6e81ed072901d0a01.jpg",
+    "static/media/manny-moreno-YM9091WTGdU-unsplash.jpg": "/Miniproject_react/static/media/manny-moreno-YM9091WTGdU-unsplash.733a106f3bf4186fad8c.jpg",
+    "static/media/eduard-VqUNqSPoufQ-unsplash.jpg": "/Miniproject_react/static/media/eduard-VqUNqSPoufQ-unsplash.eda40fccb7a303729ebc.jpg",
+    "static/media/map.jpg": "/Miniproject_react/static/media/map.25e019f48cd554c0fc67.jpg",
+    "static/media/babak-fakhamzadeh-PO7CGnoDFUI-unsplash.jpg": "/Miniproject_react/static/media/babak-fakhamzadeh-PO7CGnoDFUI-unsplash.62f00cb19cc6563ccadc.jpg",
+    "static/media/morocco.jpg": "/Miniproject_react/static/media/morocco.115a2774e1961a40154f.jpg",
+    "static/media/valdemars-magone-Es9o44wXp4I-unsplash.jpg": "/Miniproject_react/static/media/valdemars-magone-Es9o44wXp4I-unsplash.1c180670d10785e2f236.jpg",
+    "static/media/daniel-born-0xFA04r_0ds-unsplash.jpg": "/Miniproject_react/static/media/daniel-born-0xFA04r_0ds-unsplash.db9099284b5b2b15631a.jpg",
+    "static/media/steeph-almer-r43S4zMCsXU-unsplash.jpg": "/Miniproject_react/static/media/steeph-almer-r43S4zMCsXU-unsplash.65c95e6080b5fd31cca5.jpg",
+    "static/media/raul-cacho-oses-2A8ONQWR69g-unsplash.jpg": "/Miniproject_react/static/media/raul-cacho-oses-2A8ONQWR69g-unsplash.80aa0774a092d1c162d3.jpg",
+    "static/media/Tunisia.jpg": "/Miniproject_react/static/media/Tunisia.2712d0f687ed721dc6e3.jpg",
+    "static/media/issam-ammiche-Z21iAEDUuCg-unsplash.jpg": "/Miniproject_react/static/media/issam-ammiche-Z21iAEDUuCg-unsplash.f14ff3a8392bc318230d.jpg",
+    "static/media/marv-watson-UfK0P6WygEE-unsplash.jpg": "/Miniproject_react/static/media/marv-watson-UfK0P6WygEE-unsplash.1b853e166d7bae4039dd.jpg",
+    "static/media/hannah-busing-Siip8nN74SQ-unsplash.jpg": "/Miniproject_react/static/media/hannah-busing-Siip8nN74SQ-unsplash.64fa1ac62ece5f14c58f.jpg",
+    "static/media/kenya.jpg": "/Miniproject_react/static/media/kenya.25240d14c6c7d44a8bdc.jpg",
+    "static/media/climb.png": "/Miniproject_react/static/media/climb.5dbf9d26bfc889f1f822.png",
+    "static/media/Mountain.png": "/Miniproject_react/static/media/Mountain.7b8b749e9b835bce8e87.png",
+    "static/media/customer.png": "/Miniproject_react/static/media/customer.d3059cc41bde95ce08b5.png",
+    "index.html": "/Miniproject_react/index.html",
+    "main.2bf20618.css.map": "/Miniproject_react/static/css/main.2bf20618.css.map",
+    "main.8a88d9bd.js.map": "/Miniproject_react/static/js/main.8a88d9bd.js.map",
+    "787.0f45d4c2.chunk.js.map": "/Miniproject_react/static/js/787.0f45d4c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bf20618.css",
+    "static/js/main.8a88d9bd.js"
+  ]
+}
